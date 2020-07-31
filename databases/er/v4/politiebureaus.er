@@ -24,8 +24,8 @@ alttext {label: "integer, null"}
 
 [politiebureaus_locaties]
 *id {label: "bigint, not null"}
-+politiebureau_id {label: "bigint, not null"}
-+locatie_id {label: "bigint, not null"}
++politiebureaus_id {label: "bigint, not null"}
++locaties_id {label: "bigint, not null"}
 
 [locaties]
 *id {label: "bigint, not null"}
