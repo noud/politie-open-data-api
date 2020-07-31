@@ -1,0 +1,45 @@
+[politiebureaus]
+*id {label: "bigint, not null"}
+uid {label: "uuid"}
+displayName {label: "string, null"}
+links {label: "string, null"}
+url
+publicatiedatum {label: "datetime"}
+availabletranslations {label: "string, null"}
+naam
++postadres_id
++bezoekadres_id
+openingstijden {label: "text"}
+telefoonnummer
+faxnummer
+twitterurl {label: "integer, null"}
+facebookurl {label: "integer, null"}
+extrainformatie {label: "text"}
++afbeelding_id
+
+[afbeelding]
+*id {label: "bigint, not null"}
+url
+alttext {label: "integer, null"}
+
+[politiebureaus_locaties]
+*id {label: "bigint, not null"}
++politiebureau_id {label: "bigint, not null"}
++locatie_id {label: "bigint, not null"}
+
+[locaties]
+*id {label: "bigint, not null"}
+latitude {label: "float"}
+longitude {label: "float"}
+
+[adres]
+*id {label: "bigint, not null"}
+postadres
+postcode
+plaats
+
+politiebureaus 1--1 afbeelding
+politiebureaus 1--1 adres {label: "postadres"}
+politiebureaus 1--1 adres {label: "bezoekadres"}
+politiebureaus_locaties *--1 politiebureaus
+politiebureaus_locaties *--1 locaties
