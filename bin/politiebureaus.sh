@@ -7,4 +7,4 @@ MAXNUMBEROFITEMS=10 # 10 and 25. default 10
 OFFSET=0
 URLBASE=https://api.politie.nl/politiebureaus/v1
 
-curl "${URLBASE}?lat=${LAT}&lon=${LON}&radius=${RADIUS}&maxnumberofitems=${MAXNUMBEROFITEMS}&offset=${OFFSET}" -o some.json
+curl "${URLBASE}?lat=${LAT}&lon=${LON}&radius=${RADIUS}&maxnumberofitems=${MAXNUMBEROFITEMS}&offset=${OFFSET}" -o some2.json
