@@ -1,0 +1,30 @@
+{
+    "name": "noud/politie-open-data-api",
+    "require": {
+        "php": ">=7.2.5",
+        "reliese/laravel": "^0.0.16"
+    },
+    "description": "Nederlandse Landelijke Politie Open data API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Noud de Brouwer",
+            "email": "noud4@home.nl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Politie\\": "src/app/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Politie\\Providers\\APIServiceProvider"
+            ]
+        }
+    }
+}
