@@ -1,0 +1,128 @@
+[vermisten]
+*id {label: "bigint, not null"}
+name
+displayName
+path
+primaryNodeTypeName
+leaf
+canonicalHandleUuid
+localizedName
+uid
+publicatieDatum
+url
+documentType
+titel
+zaaknummer
+vermistSinds
+laatstGezienIn
+introductie
+omschrijving
+vragen
+uwTip
+urlTipformulier
+
+[vermisten_links]
+*id {label: "bigint, not null"}
++vermisten_id {label: "bigint, not null"}
++links_id {label: "bigint, not null"}
+
+[links]
+*id {label: "bigint, not null"}
+rel
+type
+href
+title
+
+[vermisten_translations]
+*id {label: "bigint, not null"}
++vermisten_id {label: "bigint, not null"}
++translations_id {label: "bigint, not null"}
+
+[translations]
+*id {label: "bigint, not null"}
+language
+id
+
+[vermisten_videos]
+*id {label: "bigint, not null"}
++vermisten_id {label: "bigint, not null"}
++videos_id {label: "bigint, not null"}
+
+[videos]
+*id {label: "bigint, not null"}
+alineaType
+url
+captionTitle
+captionSubTitle
+
+[vermisten_signalementen]
+*id {label: "bigint, not null"}
++vermisten_id {label: "bigint, not null"}
++signalementen_id {label: "bigint, not null"}
+
+[signalementen]
+*id {label: "bigint, not null"}
+titel
+
+[persoonskenmerken]
+*id {label: "bigint, not null"}
++signalementen_id {label: "bigint, not null"}
++persoonskenmerk_id {label: "bigint, not null"}
+
+[persoonskenmerk]
+*id {label: "bigint, not null"}
+label
+waarde
+
+[signalementen_afbeeldingen]
+*id {label: "bigint, not null"}
++signalementen_id {label: "bigint, not null"}
++afbeelding_id {label: "bigint, not null"}
+
+[afbeeldingen]
+*id {label: "bigint, not null"}
++vermisten_id {label: "bigint, not null"}
++afbeelding_id {label: "bigint, not null"}
+
+[meerAfbeeldingen]
+*id {label: "bigint, not null"}
++vermisten_id {label: "bigint, not null"}
++afbeelding_id {label: "bigint, not null"}
+
+[afbeelding]
+*id {label: "bigint, not null"}
+url
+alttext {label: "integer, null"}
+
+[vermisten_locaties]
+*id {label: "bigint, not null"}
++vermisten_id {label: "bigint, not null"}
++locaties_id {label: "bigint, not null"}
+
+[locaties]
+*id {label: "bigint, not null"}
+latitude {label: "float"}
+longitude {label: "float"}
+
+vermisten_links *--1 vermisten
+vermisten_links *--1 links
+vermisten_translations *--1 vermisten
+vermisten_translations *--1 translations
+vermisten_videos *--1 vermisten
+vermisten_videos *--1 videos
+vermisten_signalementen *--1 vermisten
+vermisten_signalementen *--1 signalementen
+persoonskenmerken *--1 signalementen
+persoonskenmerken *--1 persoonskenmerk
+signalementen_afbeeldingen *--1 signalementen
+signalementen_afbeeldingen *--1 afbeelding
+afbeeldingen *--1 vermisten
+afbeeldingen *--1 afbeelding
+meerAfbeeldingen *--1 vermisten
+meerAfbeeldingen *--1 afbeelding
+vermisten_locaties *--1 vermisten
+vermisten_locaties *--1 locaties
+vermisten 1--1 afbeeldingen
+vermisten 1--1 afbeelding
+vermisten_locaties *--1 vermisten
+vermisten_locaties *--1 locaties
