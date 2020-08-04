@@ -1,0 +1,196 @@
+[opsporingsberichten]
+*id {label: "bigint, not null"}
+name
+displayName
+path
+primaryNodeTypeName
+leaf {label: "boolean"}
+canonicalHandleUuid
+localizedName
+uid
+publicatieDatum
+url
+titel
+zaaknummer
+introductie
+documentType
+omschrijving
+urlTipformulier
++verdachteRepresentation_id {label: "bigint, not null"}
++voortvluchtigeRepresentation_id {label: "bigint, not null"}
++gestolenGevondenRepresentation_id {label: "bigint, not null"}
++dossierRepresentation_id {label: "bigint, not null"}
+
+[opsporingsberichten_links]
+*id {label: "bigint, not null"}
++opsporingsberichten_id {label: "bigint, not null"}
++links_id {label: "bigint, not null"}
+
+[links]
+*id {label: "bigint, not null"}
+rel
+type
+href
+title
+
+[opsporingsberichten_translations]
+*id {label: "bigint, not null"}
++opsporingsberichten_id {label: "bigint, not null"}
++translations_id {label: "bigint, not null"}
+
+[translations]
+*id {label: "bigint, not null"}
+language
+id
+
+[afbeeldingen]
+*id {label: "bigint, not null"}
++opsporingsberichten_id {label: "bigint, not null"}
++afbeelding_id {label: "bigint, not null"}
+
+[meerAfbeeldingen]
+*id {label: "bigint, not null"}
++opsporingsberichten_id {label: "bigint, not null"}
++afbeelding_id {label: "bigint, not null"}
+
+[afbeelding]
+*id {label: "bigint, not null"}
+url
+alttext {label: "integer, null"}
+
+[opsporingsberichten_locaties]
+*id {label: "bigint, not null"}
++opsporingsberichten_id {label: "bigint, not null"}
++locaties_id {label: "bigint, not null"}
+
+[locaties]
+*id {label: "bigint, not null"}
+latitude {label: "float"}
+longitude {label: "float"}
+
+[verdachteRepresentation]
+*id {label: "bigint, not null"}
+opgelost {label: "boolean"}
+update
+vraag
+datumDelict
+plaatsDelict
+slachtoffer {label: "boolean"}
+
+[verdachteRepresentation_signalementen]
+*id {label: "bigint, not null"}
++verdachteRepresentation_id {label: "bigint, not null"}
++signalementen_id {label: "bigint, not null"}
+
+[signalementen]
+*id {label: "bigint, not null"}
+titel
+
+[signalementen_afbeelding]
+*id {label: "bigint, not null"}
++signalementen_id {label: "bigint, not null"}
++afbeelding_id {label: "bigint, not null"}
+
+[persoonskenmerken]
+*id {label: "bigint, not null"}
++signalementen_id {label: "bigint, not null"}
++persoonskenmerk_id {label: "bigint, not null"}
+
+[persoonskenmerk]
+*id {label: "bigint, not null"}
+label
+waarde
+
+[verdachteRepresentation_videos]
+*id {label: "bigint, not null"}
++verdachteRepresentation_id {label: "bigint, not null"}
++videos_id {label: "bigint, not null"}
+
+[voortvluchtigeRepresentation]
+*id {label: "bigint, not null"}
+opgelost {label: "boolean"}
+update
+vraag
+laatsteVerblijfplaats
+
+[voortvluchtigeRepresentation_videos]
+*id {label: "bigint, not null"}
++voortvluchtigeRepresentation_id {label: "bigint, not null"}
++videos_id {label: "bigint, not null"}
+
+[voortvluchtigeRepresentation_persoonskenmerk]
+*id {label: "bigint, not null"}
++voortvluchtigeRepresentation_id {label: "bigint, not null"}
++persoonskenmerk_id {label: "bigint, not null"}
+
+[gestolenGevondenRepresentation]
+*id {label: "bigint, not null"}
+opgelost {label: "boolean"}
+update
+vraag
+datumDelict
+plaatsDelict
+
+[gestolenGevondenRepresentation_videos]
+*id {label: "bigint, not null"}
++gestolenGevondenRepresentation_id {label: "bigint, not null"}
++videos_id {label: "bigint, not null"}
+
+[videos]
+*id {label: "bigint, not null"}
+alineaType
+url
+captionTitle
+captionSubTitle
+
+[dossierRepresentation]
+*id {label: "bigint, not null"}
+datumDelict
+plaatsDelict
+slachtoffer
+
+[dossierRepresentation_zaakContent]
+*id {label: "bigint, not null"}
++dossierRepresentation_id {label: "bigint, not null"}
++zaakContent_id {label: "bigint, not null"}
+
+[zaakContent]
+*id {label: "bigint, not null"}
+alineaType
+
+opsporingsberichten_links *--1 opsporingsberichten
+opsporingsberichten_links *--1 links
+opsporingsberichten_translations *--1 opsporingsberichten
+opsporingsberichten_translations *--1 translations
+opsporingsberichten *--1 verdachteRepresentation
+opsporingsberichten *--1 voortvluchtigeRepresentation
+opsporingsberichten *--1 gestolenGevondenRepresentation
+opsporingsberichten *--1 dossierRepresentation
+dossierRepresentation_zaakContent *--1 dossierRepresentation
+dossierRepresentation_zaakContent *--1 zaakContent
+verdachteRepresentation_signalementen *--1 verdachteRepresentation
+verdachteRepresentation_signalementen *--1 signalementen
+verdachteRepresentation_videos *--1 verdachteRepresentation
+verdachteRepresentation_videos *--1 videos
+voortvluchtigeRepresentation_videos *--1 voortvluchtigeRepresentation
+voortvluchtigeRepresentation_videos *--1 videos
+voortvluchtigeRepresentation_persoonskenmerk *--1 voortvluchtigeRepresentation
+voortvluchtigeRepresentation_persoonskenmerk *--1 persoonskenmerk
+gestolenGevondenRepresentation_videos *--1 gestolenGevondenRepresentation
+gestolenGevondenRepresentation_videos *--1 videos
+opsporingsberichten_signalementen *--1 opsporingsberichten
+opsporingsberichten_signalementen *--1 signalementen
+persoonskenmerken *--1 signalementen
+persoonskenmerken *--1 persoonskenmerk
+signalementen_afbeelding *--1 signalementen
+signalementen_afbeelding *--1 afbeelding
+afbeeldingen *--1 opsporingsberichten
+afbeeldingen *--1 afbeelding
+meerAfbeeldingen *--1 opsporingsberichten
+meerAfbeeldingen *--1 afbeelding
+opsporingsberichten_locaties *--1 opsporingsberichten
+opsporingsberichten_locaties *--1 locaties
+opsporingsberichten 1--1 afbeeldingen
+opsporingsberichten 1--1 afbeelding
+opsporingsberichten_locaties *--1 opsporingsberichten
+opsporingsberichten_locaties *--1 locaties
