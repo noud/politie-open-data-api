@@ -6,6 +6,7 @@ use App\Models\Adre;
 use App\Models\Afbeelding;
 use App\Models\Locaty;
 use App\Models\Politiebureau;
+use App\Models\PolitiebureausLocaty;
 use Politie\Services\GeoService;
 use Illuminate\Support\Facades\Http;
 
@@ -90,40 +91,50 @@ class PolitiebureausService
         $filename = 'politiebureaus.json';
         $file = file_get_contents($filename, true);
         $politiebureaus = json_decode($file);
-        // dump($politiebureaus);
-        foreach($politiebureaus as $politiebureauSstdClass) {
-            $politiebureau = (array) $politiebureauSstdClass;
-            // dump((array) $politiebureauSstdClass);
-            // dump((array) $politiebureauSstdClass->postadres);
 
-            $politiebureauSstdClass->postadres->postcode = str_replace(" ", "", $politiebureauSstdClass->postadres->postcode);
-            $postadresArray = (array) $politiebureauSstdClass->postadres;
+        foreach($politiebureaus as $politiebureauStdClass) {
+            $politiebureauArray = (array) $politiebureauStdClass;
+
+            $politiebureauStdClass->postadres->postcode = str_replace(" ", "", $politiebureauStdClass->postadres->postcode);
+            $postadresArray = (array) $politiebureauStdClass->postadres;
             if (!empty(array_filter($postadresArray))) {
                 $postadres = Adre::firstOrCreate($postadresArray);
                 $postadres->save();
-                $politiebureau['postadres_id'] = $postadres->id;
+                $politiebureauArray['postadres_id'] = $postadres->id;
            }
 
-            $politiebureauSstdClass->bezoekadres->postcode = str_replace(" ", "", $politiebureauSstdClass->bezoekadres->postcode);
-            $bezoekadresArray = (array) $politiebureauSstdClass->bezoekadres;
+            $politiebureauStdClass->bezoekadres->postcode = str_replace(" ", "", $politiebureauStdClass->bezoekadres->postcode);
+            $bezoekadresArray = (array) $politiebureauStdClass->bezoekadres;
             if (!empty(array_filter($bezoekadresArray))) {
                 $bezoekadres = Adre::firstOrCreate($bezoekadresArray);
                 $bezoekadres->save();
-                $politiebureau['bezoekadres_id'] = $bezoekadres->id;
+                $politiebureauArray['bezoekadres_id'] = $bezoekadres->id;
             }
 
-            $afbeeldingArray = (array) $politiebureauSstdClass->afbeelding;
+            $afbeeldingArray = (array) $politiebureauStdClass->afbeelding;
             if (!empty(array_filter($afbeeldingArray))) {
                 $afbeelding = Afbeelding::firstOrCreate($afbeeldingArray);
                 $afbeelding->save();
-                $politiebureau['afbeelding_id'] = $afbeelding->id;
+                $politiebureauArray['afbeelding_id'] = $afbeelding->id;
             }
 
-            // $politiebureau['postadres_id'] = $postadres->id;
-            // $politiebureau['bezoekadres_id'] = $bezoekadres->id;
+            unset($politiebureauArray['postadres']);
+            unset($politiebureauArray['bezoekadres']);
+            unset($politiebureauArray['afbeelding']);
+            $politiebureauStdClassLocaties = $politiebureauStdClass->locaties;
+            unset($politiebureauArray['locaties']);
 
-            $politiebureau = Politiebureau::create($politiebureau);
+            $politiebureau = Politiebureau::firstOrCreate($politiebureauArray);
             $politiebureau->save();
+
+            foreach($politiebureauStdClassLocaties as $locatieStdClass) {
+                $location = Locaty::firstOrCreate((array) $locatieStdClass);
+                $location->save();
+                PolitiebureausLocaty::create([
+                    'politiebureaus_id' => $politiebureau->id,
+                    'locaties_id' => $location->id
+                ]);
+            }
         }
     }
 
