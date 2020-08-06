@@ -2,10 +2,14 @@
 
 ```
 composer install noud/politie-open-data-api
+```
+
+Use [erd-js](https://github.com/noud/erd-js) to transform the .er to React.js Entity-relationship diagram front end .json.
+```
 cd ../erd-js && npm transform
 ```
 
-Import in React.js Entity-relationship front end
+Import in React.js Entity-relationship diagram front end
 
 Export Laravel databases migrations
 

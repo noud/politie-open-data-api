@@ -15,15 +15,15 @@ naam
 telefoon
 +twitter_id
 facebookUrl
-werkgebied
-extraInformatie
-werkgebiedPolygoon
 instagramUrl
+werkgebied
+extraInformatie {label: "text"}
+werkgebiedPolygoon {label: "text"}
 
 [wijkagenten_links]
 *id {label: "bigint, not null"}
-+wijkagenten_id {label: "bigint, not null"}
-+links_id {label: "bigint, not null"}
++wijkagenten_id
++links_id
 
 [links]
 *id {label: "bigint, not null"}
@@ -34,13 +34,12 @@ title
 
 [wijkagenten_translations]
 *id {label: "bigint, not null"}
-+wijkagenten_id {label: "bigint, not null"}
-+translations_id {label: "bigint, not null"}
++wijkagenten_id
++translations_id
 
 [translations]
-*id {label: "bigint, not null"}
+*id {label: "string"}
 language
-id
 
 [afbeelding]
 *id {label: "bigint, not null"}
@@ -55,8 +54,8 @@ title
 
 [wijkagenten_locaties]
 *id {label: "bigint, not null"}
-+wijkagenten_id {label: "bigint, not null"}
-+locaties_id {label: "bigint, not null"}
++wijkagenten_id
++locaties_id
 
 [locaties]
 *id {label: "bigint, not null"}
