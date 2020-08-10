@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 
 class PolitiebureausController extends Controller
 {
-    const RESULT_TEXT ='https://api.politie.nl/politiebureaus/v1';
-
     private $service;
 
     public function __construct(PolitiebureausService $service)
