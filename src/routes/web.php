@@ -1,6 +1,7 @@
 <?php
 
-Route::get('geoquery', 'Politie\Http\Controllers\GeoController@index')->name('geo-query');
+// @todo geo package
+Route::get('geoquery', 'GeoController@index')->name('geo-query');
 
 Route::get('politiebureaus', 'Politie\Http\Controllers\PolitiebureausController@index')->name('politiebureaus');
 Route::get('politiebureaus/all', 'Politie\Http\Controllers\PolitiebureausController@all')->name('politiebureaus');
