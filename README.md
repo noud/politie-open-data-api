@@ -6,11 +6,11 @@
 
 Dit Laravel PHP package kunt U gebruiken in Uw Laravel PHP software project om de data van de Nederlandse Politie die zij via hun [Open data](https://www.politie.nl/algemeen/open-data.html) [application programming interface (API)](https://nl.wikipedia.org/wiki/Application_programming_interface) vrij geven te lezen.
 
-* Politiebureaus
-* Wijkagenten
+* [Politiebureaus](http://github.com/noud/politie-open-data-api/blob/master/README.md#politiebureaus)
+* [Wijkagenten](http://github.com/noud/politie-open-data-api/blob/master/README.md#wijkagenten)
 * Berichten
-    * Opsporingsberichten
-    * Vermisten
+    * [Opsporingsberichten](http://github.com/noud/politie-open-data-api/blob/master/README.md#opsporingsberichten)
+    * [Vermisten](http://github.com/noud/politie-open-data-api/blob/master/README.md#vermisten)
 
 ## [Tooling](http://github.com/noud/laravel-api-platform)
 
@@ -34,4 +34,4 @@ Dit Laravel PHP package kunt U gebruiken in Uw Laravel PHP software project om d
 
 ![vermisten](./docs/vermisten.png?raw=true "vermisten")
 
-# [📁 Portfolio](https://github.com/noud/portfolio#portfolio-repositories-index)
+# [📁 Portfolio](http://github.com/noud/portfolio#portfolio-repositories-index)
