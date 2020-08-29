@@ -4,13 +4,13 @@
 
 # Nederlandse Politie [Open data API](https://www.politie.nl/algemeen/open-data.html)
 
-Dit Laravel PHP package kunt U gebruiken in Uw Laravel PHP software project om de data van de Nederlandse Politie die zij via hun [Open data](https://www.politie.nl/algemeen/open-data.html) [application programming interface (API)](https://nl.wikipedia.org/wiki/Application_programming_interface) vrij geven te lezen.
+Dit Laravel PHP package kunt U gebruiken in Uw Laravel PHP software project om de data van de Nederlandse Politie die zij via hun [Open data](http://politie.nl/algemeen/open-data.html) [application programming interface (API)](http://nl.wikipedia.org/wiki/Application_programming_interface) vrij geven te lezen.
 
-* [Politiebureaus](https://github.com/noud/politie-open-data-api#politiebureaus)
-* [Wijkagenten](https://github.com/noud/politie-open-data-api#wijkagenten)
+* [Politiebureaus](http://github.com/noud/politie-open-data-api#politiebureaus)
+* [Wijkagenten](http://github.com/noud/politie-open-data-api#wijkagenten)
 * Berichten
-    * [Opsporingsberichten](https://github.com/noud/politie-open-data-api#opsporingsberichten)
-    * [Vermisten](https://github.com/noud/politie-open-data-api#vermisten)
+    * [Opsporingsberichten](http://github.com/noud/politie-open-data-api#opsporingsberichten)
+    * [Vermisten](http://github.com/noud/politie-open-data-api#vermisten)
 
 ## [Tooling](http://github.com/noud/laravel-api-platform)
 
