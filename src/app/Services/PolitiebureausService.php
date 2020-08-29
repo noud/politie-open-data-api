@@ -4,9 +4,9 @@ namespace Politie\Services;
 
 use App\Models\Adre;
 use App\Models\Afbeelding;
-use App\Models\Locaty;
+use App\Models\Locatie;
 use App\Models\Politiebureau;
-use App\Models\PolitiebureausLocaty;
+use App\Models\PolitiebureausLocatie;
 use Politie\Services\GeoService;
 use Illuminate\Support\Facades\Http;
 
@@ -128,9 +128,9 @@ class PolitiebureausService
             $politiebureau->save();
 
             foreach($politiebureauStdClassLocaties as $locatieStdClass) {
-                $location = Locaty::firstOrCreate((array) $locatieStdClass);
+                $location = Locatie::firstOrCreate((array) $locatieStdClass);
                 $location->save();
-                PolitiebureausLocaty::create([
+                PolitiebureausLocatie::create([
                     'politiebureaus_id' => $politiebureau->id,
                     'locaties_id' => $location->id
                 ]);

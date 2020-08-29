@@ -1,8 +1,7 @@
 {
     "name": "noud/politie-open-data-api",
     "require": {
-        "php": ">=7.2.5",
-        "reliese/laravel": "^0.0.16"
+        "php": ">=7.2.5"
     },
     "description": "Nederlandse Landelijke Politie Open data API",
     "type": "library",
@@ -23,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Politie\\Providers\\APIServiceProvider"
+                "Politie\\Providers\\PolitieAPIServiceProvider"
             ]
         }
     }

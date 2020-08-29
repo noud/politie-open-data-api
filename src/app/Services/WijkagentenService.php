@@ -5,9 +5,9 @@ namespace Politie\Services;
 use App\Models\Adre;
 
 use App\Models\Afbeelding;
-use App\Models\Locaty;
+use App\Models\Locatie;
 use App\Models\wijkagenten;
-use App\Models\wijkagentenLocaty;
+use App\Models\wijkagentenLocatie;
 use Illuminate\Support\Facades\Http;
 use Carbon\Carbon;
 
@@ -68,7 +68,7 @@ class wijkagentenService
         }
 
         try {
-            $locations = Locaty::all();
+            $locations = Locatie::all();
             // dump($locations);
             // exit();
             // $wijkagenten = [];
