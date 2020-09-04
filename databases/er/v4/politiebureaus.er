@@ -1,23 +1,25 @@
+title {label: "politiebureaus"}
+
 [politiebureaus]
 *id {label: "bigint, not null"}
 uid {label: "uuid"}
-displayName {label: "string, null"}
-links {label: "string, null"}
-url
-publicatiedatum {label: "datetime"}
-availabletranslations {label: "string, null"}
 naam
+displayName {label: "string, null"}
+publicatiedatum {label: "datetime"}
+url
++afbeelding_id
+facebookurl {label: "string, null"}
+twitterurl {label: "string, null"}
+telefoonnummer
+faxnummer
+links {label: "string, null"}
+availabletranslations {label: "string, null"}
 +postadres_id
 +bezoekadres_id
 openingstijden {label: "text"}
-telefoonnummer
-faxnummer
-twitterurl {label: "integer, null"}
-facebookurl {label: "integer, null"}
 extrainformatie {label: "text"}
-+afbeelding_id
 
-[afbeelding]
+[afbeeldingen] {bgcolor: "#d0e0d0"}
 *id {label: "bigint, not null"}
 url
 alttext {label: "integer, null"}
@@ -27,19 +29,19 @@ alttext {label: "integer, null"}
 +politiebureaus_id {label: "bigint, not null"}
 +locaties_id {label: "bigint, not null"}
 
-[locaties]
+[locaties] {bgcolor: "#d0e0d0"}
 *id {label: "bigint, not null"}
 latitude {label: "float"}
 longitude {label: "float"}
 
-[adres]
+[adressen]
 *id {label: "bigint, not null"}
 postadres
 postcode
 plaats
 
-politiebureaus 1--1 afbeelding
-politiebureaus 1--1 adres {label: "postadres"}
-politiebureaus 1--1 adres {label: "bezoekadres"}
+politiebureaus 1--1 afbeeldingen {label: "afbeelding"}
+politiebureaus 1--1 adressen {label: "postadres"}
+politiebureaus 1--1 adressen {label: "bezoekadres"}
 politiebureaus_locaties *--1 politiebureaus
 politiebureaus_locaties *--1 locaties

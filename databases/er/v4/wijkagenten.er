@@ -1,21 +1,23 @@
+title {label: "wijkagenten"}
+
 [wijkagenten]
 *id {label: "bigint, not null"}
-name
-displayName
+uid
+naam
+displayName {label: "string, null"}
+publicatieDatum {label: "datetime"}
+url
++afbeelding_id
+facebookUrl {label: "string, null"}
+instagramUrl {label: "string, null"}
++twitter_id
+telefoon
+name {label: "string, null"}
+localizedName {label: "string, null"}
 path
 primaryNodeTypeName
 leaf {label: "boolean"}
 canonicalHandleUuid
-localizedName
-uid
-publicatieDatum
-url
-naam
-+afbeelding_id
-telefoon
-+twitter_id
-facebookUrl
-instagramUrl
 werkgebied
 extraInformatie {label: "text"}
 werkgebiedPolygoon {label: "text"}
@@ -41,7 +43,7 @@ title
 *id {label: "string"}
 language
 
-[afbeelding]
+[afbeeldingen] {bgcolor: "#d0e0d0"}
 *id {label: "bigint, not null"}
 url
 alttext {label: "integer, null"}
@@ -57,7 +59,7 @@ title
 +wijkagenten_id
 +locaties_id
 
-[locaties]
+[locaties] {bgcolor: "#d0e0d0"}
 *id {label: "bigint, not null"}
 latitude {label: "float"}
 longitude {label: "float"}
@@ -66,7 +68,7 @@ wijkagenten_links *--1 wijkagenten
 wijkagenten_links *--1 links
 wijkagenten_translations *--1 wijkagenten
 wijkagenten_translations *--1 translations
-wijkagenten *--1 afbeelding
+wijkagenten *--1 afbeeldingen {label: "afbeelding"}
 wijkagenten *--1 twitter
 wijkagenten_locaties *--1 wijkagenten
 wijkagenten_locaties *--1 locaties

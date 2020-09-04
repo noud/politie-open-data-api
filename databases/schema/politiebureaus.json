@@ -1,6 +1,6 @@
 {
     "database": {
-        "name": "db"
+        "name": "politiebureaus"
     },
     "ui": {
         "database": {
@@ -46,113 +46,69 @@
             "tableId": ""
         },
         "positions": {
-            "sth3a": {
-                "x": 40,
+            "m25pn9": {
+                "x": 8,
+                "y": 2
+            },
+            "l4yv7": {
+                "x": 576,
+                "y": 200
+            },
+            "gwi84n": {
+                "x": 282,
+                "y": 1
+            },
+            "2ykyoc": {
+                "x": 577,
                 "y": 0
             },
-            "phiodc": {
-                "x": 543,
-                "y": 356
-            },
-            "yl7nis": {
-                "x": 883,
-                "y": 315
-            },
-            "re1zkm": {
-                "x": 585,
-                "y": 9
-            },
-            "oibpag": {
-                "x": 883,
-                "y": 6
-            },
-            "nb1uj": {
-                "x": 766,
-                "y": 555
-            },
-            "lcfi18": {
-                "x": 305,
-                "y": 529
-            },
-            "24qnpb": {
-                "x": 564,
-                "y": 181
-            },
-            "4sbosg": {
-                "x": 884,
-                "y": 144
+            "wgvj2n": {
+                "x": 577,
+                "y": 436
             }
         }
     },
     "tables": [
         {
-            "id": "sth3a",
-            "name": "wijkagenten",
+            "id": "m25pn9",
+            "name": "politiebureaus",
             "color": "table-header-blue",
             "softDelete": false,
             "timeStamp": true
         },
         {
-            "id": "phiodc",
-            "name": "wijkagenten_links",
+            "id": "l4yv7",
+            "name": "afbeeldingen",
+            "color": "table-header-green",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "gwi84n",
+            "name": "politiebureaus_locaties",
             "color": "table-header-blue",
             "softDelete": false,
             "timeStamp": true
         },
         {
-            "id": "yl7nis",
-            "name": "links",
-            "color": "table-header-blue",
-            "softDelete": false,
-            "timeStamp": true
-        },
-        {
-            "id": "re1zkm",
-            "name": "wijkagenten_translations",
-            "color": "table-header-blue",
-            "softDelete": false,
-            "timeStamp": true
-        },
-        {
-            "id": "oibpag",
-            "name": "translations",
-            "color": "table-header-blue",
-            "softDelete": false,
-            "timeStamp": true
-        },
-        {
-            "id": "nb1uj",
-            "name": "afbeelding",
-            "color": "table-header-blue",
-            "softDelete": false,
-            "timeStamp": true
-        },
-        {
-            "id": "lcfi18",
-            "name": "twitter",
-            "color": "table-header-blue",
-            "softDelete": false,
-            "timeStamp": true
-        },
-        {
-            "id": "24qnpb",
-            "name": "wijkagenten_locaties",
-            "color": "table-header-blue",
-            "softDelete": false,
-            "timeStamp": true
-        },
-        {
-            "id": "4sbosg",
+            "id": "2ykyoc",
             "name": "locaties",
+            "color": "table-header-green",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "wgvj2n",
+            "name": "adressen",
             "color": "table-header-blue",
             "softDelete": false,
             "timeStamp": true
         }
     ],
     "columns": {
-        "sth3a": [
+        "m25pn9": [
             {
-                "id": "szfjq",
+                "id": "w9kams",
                 "name": "id",
                 "type": "integer",
                 "length": "",
@@ -175,168 +131,7 @@
                 }
             },
             {
-                "id": "rog6qi",
-                "name": "name",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "rpnnd",
-                "name": "displayName",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "ka4sr",
-                "name": "path",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "9f3dmm",
-                "name": "primaryNodeTypeName",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "n26hz8",
-                "name": "leaf",
-                "type": "boolean",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "ylypk",
-                "name": "canonicalHandleUuid",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "3rmnzg",
-                "name": "localizedName",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "ralc5n",
+                "id": "00sst",
                 "name": "uid",
                 "type": "string",
                 "length": "",
@@ -359,53 +154,7 @@
                 }
             },
             {
-                "id": "r2vzeb",
-                "name": "publicatieDatum",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "cytyzo",
-                "name": "url",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "5qd6g",
+                "id": "72zeax",
                 "name": "naam",
                 "type": "string",
                 "length": "",
@@ -428,31 +177,8 @@
                 }
             },
             {
-                "id": "mkjtms",
-                "name": "afbeelding_id",
-                "type": "integer",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "b71f8h",
-                        "name": "id"
-                    },
-                    "on": {
-                        "id": "nb1uj",
-                        "name": "afbeelding"
-                    }
-                }
-            },
-            {
-                "id": "mfcqxa",
-                "name": "telefoon",
+                "id": "ybizfs",
+                "name": "displayName",
                 "type": "string",
                 "length": "",
                 "defValue": "",
@@ -474,31 +200,8 @@
                 }
             },
             {
-                "id": "hxhihf",
-                "name": "twitter_id",
-                "type": "integer",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "8sjce",
-                        "name": "id"
-                    },
-                    "on": {
-                        "id": "lcfi18",
-                        "name": "twitter"
-                    }
-                }
-            },
-            {
-                "id": "3p3js",
-                "name": "facebookUrl",
+                "id": "21umbe",
+                "name": "publicatiedatum",
                 "type": "string",
                 "length": "",
                 "defValue": "",
@@ -520,431 +223,7 @@
                 }
             },
             {
-                "id": "45sb4j",
-                "name": "instagramUrl",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "9852w6",
-                "name": "werkgebied",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "ash4hv",
-                "name": "extraInformatie",
-                "type": "text",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "9ds9pf",
-                "name": "werkgebiedPolygoon",
-                "type": "text",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            }
-        ],
-        "phiodc": [
-            {
-                "id": "8lahk",
-                "name": "id",
-                "type": "integer",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": true,
-                "nullable": false,
-                "unique": true,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "rpfh7",
-                "name": "wijkagenten_id",
-                "type": "integer",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "szfjq",
-                        "name": "id"
-                    },
-                    "on": {
-                        "id": "sth3a",
-                        "name": "wijkagenten"
-                    }
-                }
-            },
-            {
-                "id": "hag7lt",
-                "name": "links_id",
-                "type": "integer",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "xdsfp",
-                        "name": "id"
-                    },
-                    "on": {
-                        "id": "yl7nis",
-                        "name": "links"
-                    }
-                }
-            }
-        ],
-        "yl7nis": [
-            {
-                "id": "xdsfp",
-                "name": "id",
-                "type": "integer",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": true,
-                "nullable": false,
-                "unique": true,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "1hqog",
-                "name": "rel",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "69fpin",
-                "name": "type",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "8jmv1",
-                "name": "href",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "v8m9s2",
-                "name": "title",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            }
-        ],
-        "re1zkm": [
-            {
-                "id": "kmy1k",
-                "name": "id",
-                "type": "integer",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": true,
-                "nullable": false,
-                "unique": true,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "9mdklp",
-                "name": "wijkagenten_id",
-                "type": "integer",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "szfjq",
-                        "name": "id"
-                    },
-                    "on": {
-                        "id": "sth3a",
-                        "name": "wijkagenten"
-                    }
-                }
-            },
-            {
-                "id": "y27yxd",
-                "name": "translations_id",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "h8axst",
-                        "name": "id"
-                    },
-                    "on": {
-                        "id": "oibpag",
-                        "name": "translations"
-                    }
-                }
-            }
-        ],
-        "oibpag": [
-            {
-                "id": "h8axst",
-                "name": "id",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": true,
-                "nullable": true,
-                "unique": true,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "q5ordn",
-                "name": "language",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            }
-        ],
-        "nb1uj": [
-            {
-                "id": "b71f8h",
-                "name": "id",
-                "type": "integer",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": true,
-                "nullable": false,
-                "unique": true,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "1yo1tq",
+                "id": "6sqpjl",
                 "name": "url",
                 "type": "string",
                 "length": "",
@@ -967,7 +246,308 @@
                 }
             },
             {
-                "id": "2vpbt",
+                "id": "vmqec3",
+                "name": "afbeelding_id",
+                "type": "integer",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "vspepc",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "l4yv7",
+                        "name": "afbeeldingen"
+                    }
+                }
+            },
+            {
+                "id": "hvxlh",
+                "name": "facebookurl",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "v4izcl",
+                "name": "twitterurl",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "khcwt",
+                "name": "telefoonnummer",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "0i5a7",
+                "name": "faxnummer",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "woaa",
+                "name": "links",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "8sgy4s",
+                "name": "availabletranslations",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "mypi4p",
+                "name": "postadres_id",
+                "type": "integer",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "zmgob",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "wgvj2n",
+                        "name": "adressen"
+                    }
+                }
+            },
+            {
+                "id": "yakb5s",
+                "name": "bezoekadres_id",
+                "type": "integer",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "zmgob",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "wgvj2n",
+                        "name": "adressen"
+                    }
+                }
+            },
+            {
+                "id": "7m6n0c",
+                "name": "openingstijden",
+                "type": "text",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "snqu7h",
+                "name": "extrainformatie",
+                "type": "text",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            }
+        ],
+        "l4yv7": [
+            {
+                "id": "vspepc",
+                "name": "id",
+                "type": "integer",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": true,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "lt6h7",
+                "name": "url",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "1g1tnr",
                 "name": "alttext",
                 "type": "string",
                 "length": "",
@@ -990,9 +570,9 @@
                 }
             }
         ],
-        "lcfi18": [
+        "gwi84n": [
             {
-                "id": "8sjce",
+                "id": "yykmz",
                 "name": "id",
                 "type": "integer",
                 "length": "",
@@ -1015,149 +595,55 @@
                 }
             },
             {
-                "id": "0czcxd",
-                "name": "accountNaam",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "eru7kk",
-                "name": "list",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "fw9v8a",
-                "name": "title",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            }
-        ],
-        "24qnpb": [
-            {
-                "id": "kuq168",
-                "name": "id",
+                "id": "yry1tc",
+                "name": "politiebureaus_id",
                 "type": "integer",
                 "length": "",
                 "defValue": "",
                 "comment": "",
-                "autoInc": true,
+                "autoInc": false,
                 "nullable": false,
-                "unique": true,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "o2wq9",
-                "name": "wijkagenten_id",
-                "type": "integer",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
                 "unique": false,
                 "index": false,
                 "unsigned": false,
                 "foreignKey": {
                     "references": {
-                        "id": "szfjq",
+                        "id": "w9kams",
                         "name": "id"
                     },
                     "on": {
-                        "id": "sth3a",
-                        "name": "wijkagenten"
+                        "id": "m25pn9",
+                        "name": "politiebureaus"
                     }
                 }
             },
             {
-                "id": "h4zi4r",
+                "id": "bt4z5k",
                 "name": "locaties_id",
                 "type": "integer",
                 "length": "",
                 "defValue": "",
                 "comment": "",
                 "autoInc": false,
-                "nullable": true,
+                "nullable": false,
                 "unique": false,
                 "index": false,
                 "unsigned": false,
                 "foreignKey": {
                     "references": {
-                        "id": "8uhkhg",
+                        "id": "v7etgi",
                         "name": "id"
                     },
                     "on": {
-                        "id": "4sbosg",
+                        "id": "2ykyoc",
                         "name": "locaties"
                     }
                 }
             }
         ],
-        "4sbosg": [
+        "2ykyoc": [
             {
-                "id": "8uhkhg",
+                "id": "v7etgi",
                 "name": "id",
                 "type": "integer",
                 "length": "",
@@ -1180,7 +666,7 @@
                 }
             },
             {
-                "id": "rr1e9o",
+                "id": "7ws20n",
                 "name": "latitude",
                 "type": "string",
                 "length": "",
@@ -1203,8 +689,102 @@
                 }
             },
             {
-                "id": "sxmft4",
+                "id": "9l2kuc",
                 "name": "longitude",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            }
+        ],
+        "wgvj2n": [
+            {
+                "id": "zmgob",
+                "name": "id",
+                "type": "integer",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": true,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "ryxs2c",
+                "name": "postadres",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "l2l7",
+                "name": "postcode",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "6pvwv",
+                "name": "plaats",
                 "type": "string",
                 "length": "",
                 "defValue": "",
@@ -1230,82 +810,52 @@
     "relations": [
         {
             "source": {
-                "columnId": "rpfh7",
-                "tableId": "phiodc"
+                "columnId": "vmqec3",
+                "tableId": "m25pn9"
             },
             "target": {
-                "columnId": "szfjq",
-                "tableId": "sth3a"
+                "columnId": "vspepc",
+                "tableId": "l4yv7"
             }
         },
         {
             "source": {
-                "columnId": "hag7lt",
-                "tableId": "phiodc"
+                "columnId": "mypi4p",
+                "tableId": "m25pn9"
             },
             "target": {
-                "columnId": "xdsfp",
-                "tableId": "yl7nis"
+                "columnId": "zmgob",
+                "tableId": "wgvj2n"
             }
         },
         {
             "source": {
-                "columnId": "9mdklp",
-                "tableId": "re1zkm"
+                "columnId": "yakb5s",
+                "tableId": "m25pn9"
             },
             "target": {
-                "columnId": "szfjq",
-                "tableId": "sth3a"
+                "columnId": "zmgob",
+                "tableId": "wgvj2n"
             }
         },
         {
             "source": {
-                "columnId": "y27yxd",
-                "tableId": "re1zkm"
+                "columnId": "yry1tc",
+                "tableId": "gwi84n"
             },
             "target": {
-                "columnId": "h8axst",
-                "tableId": "oibpag"
+                "columnId": "w9kams",
+                "tableId": "m25pn9"
             }
         },
         {
             "source": {
-                "columnId": "mkjtms",
-                "tableId": "sth3a"
+                "columnId": "bt4z5k",
+                "tableId": "gwi84n"
             },
             "target": {
-                "columnId": "b71f8h",
-                "tableId": "nb1uj"
-            }
-        },
-        {
-            "source": {
-                "columnId": "hxhihf",
-                "tableId": "sth3a"
-            },
-            "target": {
-                "columnId": "8sjce",
-                "tableId": "lcfi18"
-            }
-        },
-        {
-            "source": {
-                "columnId": "o2wq9",
-                "tableId": "24qnpb"
-            },
-            "target": {
-                "columnId": "szfjq",
-                "tableId": "sth3a"
-            }
-        },
-        {
-            "source": {
-                "columnId": "h4zi4r",
-                "tableId": "24qnpb"
-            },
-            "target": {
-                "columnId": "8uhkhg",
-                "tableId": "4sbosg"
+                "columnId": "v7etgi",
+                "tableId": "2ykyoc"
             }
         }
     ]

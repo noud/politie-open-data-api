@@ -1,6 +1,6 @@
 {
     "database": {
-        "name": "db"
+        "name": "wijkagenten"
     },
     "ui": {
         "database": {
@@ -46,69 +46,113 @@
             "tableId": ""
         },
         "positions": {
-            "cpe8dj": {
-                "x": 40,
-                "y": 5
+            "acijt3": {
+                "x": 10,
+                "y": 0
             },
-            "pfck2j": {
-                "x": 658,
-                "y": 483
+            "deopa": {
+                "x": 515,
+                "y": 345
             },
-            "yrtw78": {
-                "x": 331,
-                "y": 4
+            "iq00lp": {
+                "x": 839,
+                "y": 345
             },
-            "jv4u1o": {
-                "x": 641,
-                "y": 3
+            "re8g7o": {
+                "x": 550,
+                "y": 6
             },
-            "82p6sof": {
-                "x": 655,
-                "y": 275
+            "kvrfw": {
+                "x": 841,
+                "y": 8
+            },
+            "2c54pc": {
+                "x": 498,
+                "y": 515
+            },
+            "fqut5t": {
+                "x": 285,
+                "y": 577
+            },
+            "71i5pp": {
+                "x": 536,
+                "y": 175
+            },
+            "ftx7wn": {
+                "x": 839,
+                "y": 174
             }
         }
     },
     "tables": [
         {
-            "id": "cpe8dj",
-            "name": "politiebureaus",
+            "id": "acijt3",
+            "name": "wijkagenten",
             "color": "table-header-blue",
             "softDelete": false,
             "timeStamp": true
         },
         {
-            "id": "pfck2j",
-            "name": "afbeelding",
+            "id": "deopa",
+            "name": "wijkagenten_links",
             "color": "table-header-blue",
             "softDelete": false,
             "timeStamp": true
         },
         {
-            "id": "yrtw78",
-            "name": "politiebureaus_locaties",
+            "id": "iq00lp",
+            "name": "links",
             "color": "table-header-blue",
             "softDelete": false,
             "timeStamp": true
         },
         {
-            "id": "jv4u1o",
+            "id": "re8g7o",
+            "name": "wijkagenten_translations",
+            "color": "table-header-blue",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "kvrfw",
+            "name": "translations",
+            "color": "table-header-blue",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "2c54pc",
+            "name": "afbeeldingen",
+            "color": "table-header-green",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "fqut5t",
+            "name": "twitter",
+            "color": "table-header-blue",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "71i5pp",
+            "name": "wijkagenten_locaties",
+            "color": "table-header-blue",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "ftx7wn",
             "name": "locaties",
-            "color": "table-header-blue",
-            "softDelete": false,
-            "timeStamp": true
-        },
-        {
-            "id": "82p6sof",
-            "name": "adres",
-            "color": "table-header-blue",
+            "color": "table-header-green",
             "softDelete": false,
             "timeStamp": true
         }
     ],
     "columns": {
-        "cpe8dj": [
+        "acijt3": [
             {
-                "id": "6g4lny",
+                "id": "8qdl6",
                 "name": "id",
                 "type": "integer",
                 "length": "",
@@ -131,7 +175,7 @@
                 }
             },
             {
-                "id": "o8rvb",
+                "id": "yrkxii",
                 "name": "uid",
                 "type": "string",
                 "length": "",
@@ -154,122 +198,7 @@
                 }
             },
             {
-                "id": "b70te",
-                "name": "displayName",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "rec09b",
-                "name": "links",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "xbj5uj",
-                "name": "url",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "qh0zb",
-                "name": "publicatiedatum",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "kqt27e",
-                "name": "availabletranslations",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "addbvr",
+                "id": "lctqxl",
                 "name": "naam",
                 "type": "string",
                 "length": "",
@@ -292,77 +221,8 @@
                 }
             },
             {
-                "id": "ojcvyf",
-                "name": "postadres_id",
-                "type": "integer",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": true,
-                "foreignKey": {
-                    "references": {
-                        "id": "uspktn",
-                        "name": "id"
-                    },
-                    "on": {
-                        "id": "82p6sof",
-                        "name": "adres"
-                    }
-                }
-            },
-            {
-                "id": "afnp2p",
-                "name": "bezoekadres_id",
-                "type": "integer",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": true,
-                "foreignKey": {
-                    "references": {
-                        "id": "uspktn",
-                        "name": "id"
-                    },
-                    "on": {
-                        "id": "82p6sof",
-                        "name": "adres"
-                    }
-                }
-            },
-            {
-                "id": "mof4q",
-                "name": "openingstijden",
-                "type": "text",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "rpmpci",
-                "name": "telefoonnummer",
+                "id": "u6n6xk",
+                "name": "displayName",
                 "type": "string",
                 "length": "",
                 "defValue": "",
@@ -384,8 +244,8 @@
                 }
             },
             {
-                "id": "89r8v",
-                "name": "faxnummer",
+                "id": "a1m8e9",
+                "name": "publicatieDatum",
                 "type": "string",
                 "length": "",
                 "defValue": "",
@@ -407,124 +267,7 @@
                 }
             },
             {
-                "id": "75fqdp",
-                "name": "twitterurl",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "mvheie",
-                "name": "facebookurl",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "uhqjucg",
-                "name": "extrainformatie",
-                "type": "text",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "1wja6q",
-                "name": "afbeelding_id",
-                "type": "integer",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": true,
-                "foreignKey": {
-                    "references": {
-                        "id": "ww2j8c",
-                        "name": "id"
-                    },
-                    "on": {
-                        "id": "pfck2j",
-                        "name": "afbeelding"
-                    }
-                }
-            }
-        ],
-        "pfck2j": [
-            {
-                "id": "ww2j8c",
-                "name": "id",
-                "type": "integer",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": true,
-                "nullable": false,
-                "unique": true,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "dd450vb",
+                "id": "aqppps",
                 "name": "url",
                 "type": "string",
                 "length": "",
@@ -547,7 +290,684 @@
                 }
             },
             {
-                "id": "50zn2f",
+                "id": "3rozn",
+                "name": "afbeelding_id",
+                "type": "integer",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "y3xzp9",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "2c54pc",
+                        "name": "afbeeldingen"
+                    }
+                }
+            },
+            {
+                "id": "b58k5",
+                "name": "facebookUrl",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "00qj5g",
+                "name": "instagramUrl",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "l42emu",
+                "name": "twitter_id",
+                "type": "integer",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "zid3av",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "fqut5t",
+                        "name": "twitter"
+                    }
+                }
+            },
+            {
+                "id": "wersfq",
+                "name": "telefoon",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "20f8ig",
+                "name": "name",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "3zuyf",
+                "name": "localizedName",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "3n7npee",
+                "name": "path",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "6ipwkr",
+                "name": "primaryNodeTypeName",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "fiyp8o",
+                "name": "leaf",
+                "type": "boolean",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "3nvdoa",
+                "name": "canonicalHandleUuid",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "zl6glr",
+                "name": "werkgebied",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "i209l5",
+                "name": "extraInformatie",
+                "type": "text",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "tsjuwa",
+                "name": "werkgebiedPolygoon",
+                "type": "text",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            }
+        ],
+        "deopa": [
+            {
+                "id": "6fq0w",
+                "name": "id",
+                "type": "integer",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": true,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "xp5jhm",
+                "name": "wijkagenten_id",
+                "type": "integer",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "8qdl6",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "acijt3",
+                        "name": "wijkagenten"
+                    }
+                }
+            },
+            {
+                "id": "b3sey",
+                "name": "links_id",
+                "type": "integer",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "1tf03",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "iq00lp",
+                        "name": "links"
+                    }
+                }
+            }
+        ],
+        "iq00lp": [
+            {
+                "id": "1tf03",
+                "name": "id",
+                "type": "integer",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": true,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "odlry",
+                "name": "rel",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "z9d13f",
+                "name": "type",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "8lrjzg",
+                "name": "href",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "1xrrri",
+                "name": "title",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            }
+        ],
+        "re8g7o": [
+            {
+                "id": "19bppq",
+                "name": "id",
+                "type": "integer",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": true,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "vfybc",
+                "name": "wijkagenten_id",
+                "type": "integer",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "8qdl6",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "acijt3",
+                        "name": "wijkagenten"
+                    }
+                }
+            },
+            {
+                "id": "nuih7",
+                "name": "translations_id",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "kghfbr",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "kvrfw",
+                        "name": "translations"
+                    }
+                }
+            }
+        ],
+        "kvrfw": [
+            {
+                "id": "kghfbr",
+                "name": "id",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": true,
+                "unique": true,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "dxnd3t",
+                "name": "language",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            }
+        ],
+        "2c54pc": [
+            {
+                "id": "y3xzp9",
+                "name": "id",
+                "type": "integer",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": true,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "d0pozzj",
+                "name": "url",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "gk004",
                 "name": "alttext",
                 "type": "string",
                 "length": "",
@@ -570,9 +990,9 @@
                 }
             }
         ],
-        "yrtw78": [
+        "fqut5t": [
             {
-                "id": "uvmgxm",
+                "id": "zid3av",
                 "name": "id",
                 "type": "integer",
                 "length": "",
@@ -595,55 +1015,149 @@
                 }
             },
             {
-                "id": "1qklb8",
-                "name": "politiebureaus_id",
+                "id": "03wv4",
+                "name": "accountNaam",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "qiq6l",
+                "name": "list",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "njvcf",
+                "name": "title",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            }
+        ],
+        "71i5pp": [
+            {
+                "id": "df0er",
+                "name": "id",
+                "type": "integer",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": true,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "un15ea",
+                "name": "wijkagenten_id",
                 "type": "integer",
                 "length": "",
                 "defValue": "",
                 "comment": "",
                 "autoInc": false,
-                "nullable": false,
+                "nullable": true,
                 "unique": false,
                 "index": false,
-                "unsigned": true,
+                "unsigned": false,
                 "foreignKey": {
                     "references": {
-                        "id": "6g4lny",
+                        "id": "8qdl6",
                         "name": "id"
                     },
                     "on": {
-                        "id": "cpe8dj",
-                        "name": "politiebureaus"
+                        "id": "acijt3",
+                        "name": "wijkagenten"
                     }
                 }
             },
             {
-                "id": "s0yxknp",
+                "id": "twmwic",
                 "name": "locaties_id",
                 "type": "integer",
                 "length": "",
                 "defValue": "",
                 "comment": "",
                 "autoInc": false,
-                "nullable": false,
+                "nullable": true,
                 "unique": false,
                 "index": false,
-                "unsigned": true,
+                "unsigned": false,
                 "foreignKey": {
                     "references": {
-                        "id": "fpoqkb",
+                        "id": "ot6e5c",
                         "name": "id"
                     },
                     "on": {
-                        "id": "jv4u1o",
+                        "id": "ftx7wn",
                         "name": "locaties"
                     }
                 }
             }
         ],
-        "jv4u1o": [
+        "ftx7wn": [
             {
-                "id": "fpoqkb",
+                "id": "ot6e5c",
                 "name": "id",
                 "type": "integer",
                 "length": "",
@@ -666,7 +1180,7 @@
                 }
             },
             {
-                "id": "lq867w",
+                "id": "ynd1d6",
                 "name": "latitude",
                 "type": "string",
                 "length": "",
@@ -689,102 +1203,8 @@
                 }
             },
             {
-                "id": "2iyj2i",
+                "id": "k41mh",
                 "name": "longitude",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            }
-        ],
-        "82p6sof": [
-            {
-                "id": "uspktn",
-                "name": "id",
-                "type": "integer",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": true,
-                "nullable": false,
-                "unique": true,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "3rc58",
-                "name": "postadres",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "ottq5g",
-                "name": "postcode",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "pkhwft",
-                "name": "plaats",
                 "type": "string",
                 "length": "",
                 "defValue": "",
@@ -810,52 +1230,82 @@
     "relations": [
         {
             "source": {
-                "columnId": "1wja6q",
-                "tableId": "cpe8dj"
+                "columnId": "xp5jhm",
+                "tableId": "deopa"
             },
             "target": {
-                "columnId": "ww2j8c",
-                "tableId": "pfck2j"
+                "columnId": "8qdl6",
+                "tableId": "acijt3"
             }
         },
         {
             "source": {
-                "columnId": "ojcvyf",
-                "tableId": "cpe8dj"
+                "columnId": "b3sey",
+                "tableId": "deopa"
             },
             "target": {
-                "columnId": "uspktn",
-                "tableId": "82p6sof"
+                "columnId": "1tf03",
+                "tableId": "iq00lp"
             }
         },
         {
             "source": {
-                "columnId": "afnp2p",
-                "tableId": "cpe8dj"
+                "columnId": "vfybc",
+                "tableId": "re8g7o"
             },
             "target": {
-                "columnId": "uspktn",
-                "tableId": "82p6sof"
+                "columnId": "8qdl6",
+                "tableId": "acijt3"
             }
         },
         {
             "source": {
-                "columnId": "1qklb8",
-                "tableId": "yrtw78"
+                "columnId": "nuih7",
+                "tableId": "re8g7o"
             },
             "target": {
-                "columnId": "6g4lny",
-                "tableId": "cpe8dj"
+                "columnId": "kghfbr",
+                "tableId": "kvrfw"
             }
         },
         {
             "source": {
-                "columnId": "s0yxknp",
-                "tableId": "yrtw78"
+                "columnId": "3rozn",
+                "tableId": "acijt3"
             },
             "target": {
-                "columnId": "fpoqkb",
-                "tableId": "jv4u1o"
+                "columnId": "y3xzp9",
+                "tableId": "2c54pc"
+            }
+        },
+        {
+            "source": {
+                "columnId": "l42emu",
+                "tableId": "acijt3"
+            },
+            "target": {
+                "columnId": "zid3av",
+                "tableId": "fqut5t"
+            }
+        },
+        {
+            "source": {
+                "columnId": "un15ea",
+                "tableId": "71i5pp"
+            },
+            "target": {
+                "columnId": "8qdl6",
+                "tableId": "acijt3"
+            }
+        },
+        {
+            "source": {
+                "columnId": "twmwic",
+                "tableId": "71i5pp"
+            },
+            "target": {
+                "columnId": "ot6e5c",
+                "tableId": "ftx7wn"
             }
         }
     ]
