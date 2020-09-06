@@ -10,8 +10,8 @@ class FillTablesTable extends Migration
 
     private $tables = [
         
-        'adres',
-        'afbeelding',
+        'adressen',
+        'afbeeldingen',
         'locaties',
         'politiebureaus',
         'twitter',

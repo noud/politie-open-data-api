@@ -1,8 +1,7 @@
 title {label: "politiebureaus"}
 
 [politiebureaus]
-*id {label: "bigint, not null"}
-uid {label: "uuid"}
+*uid {label: "uuid"}
 naam
 displayName {label: "string, null"}
 publicatiedatum {label: "datetime"}

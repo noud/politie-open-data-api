@@ -1,8 +1,7 @@
 title {label: "wijkagenten"}
 
 [wijkagenten]
-*id {label: "bigint, not null"}
-uid
+*uid {label: "uuid"}
 naam
 displayName {label: "string, null"}
 publicatieDatum {label: "datetime"}

@@ -46,59 +46,59 @@
             "tableId": ""
         },
         "positions": {
-            "m25pn9": {
-                "x": 8,
-                "y": 2
+            "38qb3b": {
+                "x": 9,
+                "y": 3
             },
-            "l4yv7": {
-                "x": 576,
-                "y": 200
+            "nlotti": {
+                "x": 544,
+                "y": 180
             },
-            "gwi84n": {
-                "x": 282,
-                "y": 1
+            "4fs23o": {
+                "x": 266,
+                "y": 7
             },
-            "2ykyoc": {
-                "x": 577,
-                "y": 0
+            "aqilyu": {
+                "x": 545,
+                "y": 9
             },
-            "wgvj2n": {
-                "x": 577,
-                "y": 436
+            "76ryoh": {
+                "x": 546,
+                "y": 397
             }
         }
     },
     "tables": [
         {
-            "id": "m25pn9",
+            "id": "38qb3b",
             "name": "politiebureaus",
             "color": "table-header-blue",
             "softDelete": false,
             "timeStamp": true
         },
         {
-            "id": "l4yv7",
+            "id": "nlotti",
             "name": "afbeeldingen",
             "color": "table-header-green",
             "softDelete": false,
             "timeStamp": true
         },
         {
-            "id": "gwi84n",
+            "id": "4fs23o",
             "name": "politiebureaus_locaties",
             "color": "table-header-blue",
             "softDelete": false,
             "timeStamp": true
         },
         {
-            "id": "2ykyoc",
+            "id": "aqilyu",
             "name": "locaties",
             "color": "table-header-green",
             "softDelete": false,
             "timeStamp": true
         },
         {
-            "id": "wgvj2n",
+            "id": "76ryoh",
             "name": "adressen",
             "color": "table-header-blue",
             "softDelete": false,
@@ -106,16 +106,16 @@
         }
     ],
     "columns": {
-        "m25pn9": [
+        "38qb3b": [
             {
-                "id": "w9kams",
-                "name": "id",
-                "type": "integer",
+                "id": "9tx4y",
+                "name": "uid",
+                "type": "uuid",
                 "length": "",
                 "defValue": "",
                 "comment": "",
                 "autoInc": true,
-                "nullable": false,
+                "nullable": true,
                 "unique": true,
                 "index": false,
                 "unsigned": false,
@@ -131,30 +131,7 @@
                 }
             },
             {
-                "id": "00sst",
-                "name": "uid",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "72zeax",
+                "id": "pq8rb",
                 "name": "naam",
                 "type": "string",
                 "length": "",
@@ -177,7 +154,7 @@
                 }
             },
             {
-                "id": "ybizfs",
+                "id": "x3gmhm",
                 "name": "displayName",
                 "type": "string",
                 "length": "",
@@ -200,7 +177,7 @@
                 }
             },
             {
-                "id": "21umbe",
+                "id": "u1lm2",
                 "name": "publicatiedatum",
                 "type": "string",
                 "length": "",
@@ -223,7 +200,7 @@
                 }
             },
             {
-                "id": "6sqpjl",
+                "id": "1f992",
                 "name": "url",
                 "type": "string",
                 "length": "",
@@ -246,7 +223,7 @@
                 }
             },
             {
-                "id": "vmqec3",
+                "id": "9tyunj",
                 "name": "afbeelding_id",
                 "type": "integer",
                 "length": "",
@@ -256,20 +233,20 @@
                 "nullable": true,
                 "unique": false,
                 "index": false,
-                "unsigned": false,
+                "unsigned": true,
                 "foreignKey": {
                     "references": {
-                        "id": "vspepc",
+                        "id": "v93d6g",
                         "name": "id"
                     },
                     "on": {
-                        "id": "l4yv7",
+                        "id": "nlotti",
                         "name": "afbeeldingen"
                     }
                 }
             },
             {
-                "id": "hvxlh",
+                "id": "82lt2e",
                 "name": "facebookurl",
                 "type": "string",
                 "length": "",
@@ -292,7 +269,7 @@
                 }
             },
             {
-                "id": "v4izcl",
+                "id": "32qdml",
                 "name": "twitterurl",
                 "type": "string",
                 "length": "",
@@ -315,7 +292,7 @@
                 }
             },
             {
-                "id": "khcwt",
+                "id": "a7wavf",
                 "name": "telefoonnummer",
                 "type": "string",
                 "length": "",
@@ -338,7 +315,7 @@
                 }
             },
             {
-                "id": "0i5a7",
+                "id": "5dqkci",
                 "name": "faxnummer",
                 "type": "string",
                 "length": "",
@@ -361,7 +338,7 @@
                 }
             },
             {
-                "id": "woaa",
+                "id": "s44a6f",
                 "name": "links",
                 "type": "string",
                 "length": "",
@@ -384,7 +361,7 @@
                 }
             },
             {
-                "id": "8sgy4s",
+                "id": "1gaqgk7",
                 "name": "availabletranslations",
                 "type": "string",
                 "length": "",
@@ -407,7 +384,7 @@
                 }
             },
             {
-                "id": "mypi4p",
+                "id": "r703de",
                 "name": "postadres_id",
                 "type": "integer",
                 "length": "",
@@ -417,20 +394,20 @@
                 "nullable": true,
                 "unique": false,
                 "index": false,
-                "unsigned": false,
+                "unsigned": true,
                 "foreignKey": {
                     "references": {
-                        "id": "zmgob",
+                        "id": "oxu12b",
                         "name": "id"
                     },
                     "on": {
-                        "id": "wgvj2n",
+                        "id": "76ryoh",
                         "name": "adressen"
                     }
                 }
             },
             {
-                "id": "yakb5s",
+                "id": "2uqsud",
                 "name": "bezoekadres_id",
                 "type": "integer",
                 "length": "",
@@ -440,20 +417,20 @@
                 "nullable": true,
                 "unique": false,
                 "index": false,
-                "unsigned": false,
+                "unsigned": true,
                 "foreignKey": {
                     "references": {
-                        "id": "zmgob",
+                        "id": "oxu12b",
                         "name": "id"
                     },
                     "on": {
-                        "id": "wgvj2n",
+                        "id": "76ryoh",
                         "name": "adressen"
                     }
                 }
             },
             {
-                "id": "7m6n0c",
+                "id": "28y4ft",
                 "name": "openingstijden",
                 "type": "text",
                 "length": "",
@@ -476,7 +453,7 @@
                 }
             },
             {
-                "id": "snqu7h",
+                "id": "iatzu",
                 "name": "extrainformatie",
                 "type": "text",
                 "length": "",
@@ -499,9 +476,9 @@
                 }
             }
         ],
-        "l4yv7": [
+        "nlotti": [
             {
-                "id": "vspepc",
+                "id": "v93d6g",
                 "name": "id",
                 "type": "integer",
                 "length": "",
@@ -524,7 +501,7 @@
                 }
             },
             {
-                "id": "lt6h7",
+                "id": "6x1kt",
                 "name": "url",
                 "type": "string",
                 "length": "",
@@ -547,7 +524,7 @@
                 }
             },
             {
-                "id": "1g1tnr",
+                "id": "nt9uwd",
                 "name": "alttext",
                 "type": "string",
                 "length": "",
@@ -570,9 +547,9 @@
                 }
             }
         ],
-        "gwi84n": [
+        "4fs23o": [
             {
-                "id": "yykmz",
+                "id": "zh1pp",
                 "name": "id",
                 "type": "integer",
                 "length": "",
@@ -595,9 +572,9 @@
                 }
             },
             {
-                "id": "yry1tc",
+                "id": "k02kd",
                 "name": "politiebureaus_id",
-                "type": "integer",
+                "type": "uuid",
                 "length": "",
                 "defValue": "",
                 "comment": "",
@@ -608,17 +585,17 @@
                 "unsigned": false,
                 "foreignKey": {
                     "references": {
-                        "id": "w9kams",
-                        "name": "id"
+                        "id": "9tx4y",
+                        "name": "uid"
                     },
                     "on": {
-                        "id": "m25pn9",
+                        "id": "38qb3b",
                         "name": "politiebureaus"
                     }
                 }
             },
             {
-                "id": "bt4z5k",
+                "id": "2exq6k",
                 "name": "locaties_id",
                 "type": "integer",
                 "length": "",
@@ -628,22 +605,22 @@
                 "nullable": false,
                 "unique": false,
                 "index": false,
-                "unsigned": false,
+                "unsigned": true,
                 "foreignKey": {
                     "references": {
-                        "id": "v7etgi",
+                        "id": "tkzu2s",
                         "name": "id"
                     },
                     "on": {
-                        "id": "2ykyoc",
+                        "id": "aqilyu",
                         "name": "locaties"
                     }
                 }
             }
         ],
-        "2ykyoc": [
+        "aqilyu": [
             {
-                "id": "v7etgi",
+                "id": "tkzu2s",
                 "name": "id",
                 "type": "integer",
                 "length": "",
@@ -666,7 +643,7 @@
                 }
             },
             {
-                "id": "7ws20n",
+                "id": "4bccez",
                 "name": "latitude",
                 "type": "string",
                 "length": "",
@@ -689,7 +666,7 @@
                 }
             },
             {
-                "id": "9l2kuc",
+                "id": "hxwd5r",
                 "name": "longitude",
                 "type": "string",
                 "length": "",
@@ -712,9 +689,9 @@
                 }
             }
         ],
-        "wgvj2n": [
+        "76ryoh": [
             {
-                "id": "zmgob",
+                "id": "oxu12b",
                 "name": "id",
                 "type": "integer",
                 "length": "",
@@ -737,7 +714,7 @@
                 }
             },
             {
-                "id": "ryxs2c",
+                "id": "h861y",
                 "name": "postadres",
                 "type": "string",
                 "length": "",
@@ -760,7 +737,7 @@
                 }
             },
             {
-                "id": "l2l7",
+                "id": "0uj304",
                 "name": "postcode",
                 "type": "string",
                 "length": "",
@@ -783,7 +760,7 @@
                 }
             },
             {
-                "id": "6pvwv",
+                "id": "7xsxu",
                 "name": "plaats",
                 "type": "string",
                 "length": "",
@@ -810,52 +787,52 @@
     "relations": [
         {
             "source": {
-                "columnId": "vmqec3",
-                "tableId": "m25pn9"
+                "columnId": "9tyunj",
+                "tableId": "38qb3b"
             },
             "target": {
-                "columnId": "vspepc",
-                "tableId": "l4yv7"
+                "columnId": "v93d6g",
+                "tableId": "nlotti"
             }
         },
         {
             "source": {
-                "columnId": "mypi4p",
-                "tableId": "m25pn9"
+                "columnId": "r703de",
+                "tableId": "38qb3b"
             },
             "target": {
-                "columnId": "zmgob",
-                "tableId": "wgvj2n"
+                "columnId": "oxu12b",
+                "tableId": "76ryoh"
             }
         },
         {
             "source": {
-                "columnId": "yakb5s",
-                "tableId": "m25pn9"
+                "columnId": "2uqsud",
+                "tableId": "38qb3b"
             },
             "target": {
-                "columnId": "zmgob",
-                "tableId": "wgvj2n"
+                "columnId": "oxu12b",
+                "tableId": "76ryoh"
             }
         },
         {
             "source": {
-                "columnId": "yry1tc",
-                "tableId": "gwi84n"
+                "columnId": "k02kd",
+                "tableId": "4fs23o"
             },
             "target": {
-                "columnId": "w9kams",
-                "tableId": "m25pn9"
+                "columnId": "9tx4y",
+                "tableId": "38qb3b"
             }
         },
         {
             "source": {
-                "columnId": "bt4z5k",
-                "tableId": "gwi84n"
+                "columnId": "2exq6k",
+                "tableId": "4fs23o"
             },
             "target": {
-                "columnId": "v7etgi",
-                "tableId": "2ykyoc"
+                "columnId": "tkzu2s",
+                "tableId": "aqilyu"
             }
         }
     ]
