@@ -18,7 +18,7 @@ Dit Laravel PHP package kunt U gebruiken in Uw Laravel PHP software project om d
 
 ### Politiebureaus
 
-![politiebureaus](./docs/politiebureaus.png?raw=true "politiebureaus")
+![politiebureaus](./docs/politiebureaus.graph.png?raw=true "politiebureaus")
 
 ### Wijkagenten
 
