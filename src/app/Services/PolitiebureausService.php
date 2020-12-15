@@ -143,19 +143,19 @@ class PolitiebureausService
 
     public function getPictures()
     {
-        $base =  '';
+        $base =  '/';
 
         $images = Afbeelding::all();
 
         foreach($images as $image)
         {
             if ($image->url) {
-                $file = Storage::url($image->url);
+                $file = file_get_contents($image->url, true);
                 $filename = str_replace("https://www.politie.nl/", "", $image->url);
                 $path = explode('/',$filename);
                 array_pop($path);
                 $path = implode('/',$path);
-                Storage::disk('local')->makeDirectory($base . $path);
+                Storage::makeDirectory($base . $path);
                 $filename = $base . $filename;
                 Storage::disk('local')->put($filename, $file);
             }         
