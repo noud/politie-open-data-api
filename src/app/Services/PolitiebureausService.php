@@ -9,6 +9,7 @@ use App\Models\Politiebureau;
 use App\Models\PolitiebureausLocatie;
 use Politie\Services\GeoService;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Storage;
 
 class PolitiebureausService
 {
@@ -140,30 +141,23 @@ class PolitiebureausService
         }
     }
 
-    // @todo use laravel file
     public function getPictures()
     {
-        $base =  '/home/noud/workspace/politiebureaus/public/';
-        $base =  '/var/www/politiebureaus/public/';
+        $base =  '';
 
         $images = Afbeelding::all();
 
         foreach($images as $image)
         {
             if ($image->url) {
-                $file = file_get_contents($image->url, true);
-
+                $file = Storage::url($image->url);
                 $filename = str_replace("https://www.politie.nl/", "", $image->url);
-
                 $path = explode('/',$filename);
                 array_pop($path);
                 $path = implode('/',$path);
-                if (!is_dir($base . $path)) {
-                    mkdir($base . $path, 0775, true);
-                    $filename = $base . $filename;
-                }
-
-                file_put_contents($filename, $file);  
+                Storage::disk('local')->makeDirectory($base . $path);
+                $filename = $base . $filename;
+                Storage::disk('local')->put($filename, $file);
             }         
         }
    }
