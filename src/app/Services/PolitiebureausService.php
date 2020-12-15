@@ -2,7 +2,7 @@
 
 namespace Politie\Services;
 
-use App\Models\Adre;
+use App\Models\Adres;
 use App\Models\Afbeelding;
 use App\Models\Locatie;
 use App\Models\Politiebureau;
@@ -98,7 +98,7 @@ class PolitiebureausService
             $politiebureauStdClass->postadres->postcode = str_replace(" ", "", $politiebureauStdClass->postadres->postcode);
             $postadresArray = (array) $politiebureauStdClass->postadres;
             if (!empty(array_filter($postadresArray))) {
-                $postadres = Adre::firstOrCreate($postadresArray);
+                $postadres = Adres::firstOrCreate($postadresArray);
                 $postadres->save();
                 $politiebureauArray['postadres_id'] = $postadres->id;
            }
@@ -106,7 +106,7 @@ class PolitiebureausService
             $politiebureauStdClass->bezoekadres->postcode = str_replace(" ", "", $politiebureauStdClass->bezoekadres->postcode);
             $bezoekadresArray = (array) $politiebureauStdClass->bezoekadres;
             if (!empty(array_filter($bezoekadresArray))) {
-                $bezoekadres = Adre::firstOrCreate($bezoekadresArray);
+                $bezoekadres = Adres::firstOrCreate($bezoekadresArray);
                 $bezoekadres->save();
                 $politiebureauArray['bezoekadres_id'] = $bezoekadres->id;
             }
@@ -130,8 +130,10 @@ class PolitiebureausService
             foreach($politiebureauStdClassLocaties as $locatieStdClass) {
                 $location = Locatie::firstOrCreate((array) $locatieStdClass);
                 $location->save();
+                var_dump($politiebureau);
+                var_dump($location);
                 PolitiebureausLocatie::create([
-                    'politiebureaus_id' => $politiebureau->id,
+                    'politiebureaus_id' => $politiebureau->uid,
                     'locaties_id' => $location->id
                 ]);
             }
