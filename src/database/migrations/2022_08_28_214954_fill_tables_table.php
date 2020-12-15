@@ -30,6 +30,12 @@ class FillTablesTable extends Migration
      */
     public function up()
     {
+        Schema::create('tables', function (Blueprint $table) {
+            $table->increments('id')->unique();
+            $table->string('name')->nullable();
+            $table->string('language')->nullable();
+            $table->timestamps();
+        });
         foreach ($this->tables as $table) {
             DB::table('tables')->insert([
                 'name' => $table,
@@ -45,5 +51,6 @@ class FillTablesTable extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('tables');
     }
 }
