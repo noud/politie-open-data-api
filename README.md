@@ -1,9 +1,9 @@
-# [React front end](http://github.com/noud/react-openapi-politie)
-# [React Native front end](http://github.com/noud/react-native-openapi-politie)
+# [Politie React Swagger front end](http://github.com/noud/politie-react-swagger)
+# [Politie React Native Swagger front end](http://github.com/noud/politie-react-native-swagger)
 
 ![politie_logo](./docs/politie_logo.svg?raw=true "politie_logo")
 
-# Nederlandse Politie [Open data API](http://politie.nl/algemeen/open-data.html)
+# [Nederlandse](http://en.wikipedia.org/wiki/Netherlands) [Politie](http://politie.nl) [Open data API](http://politie.nl/algemeen/open-data.html)
 
 Dit Laravel PHP package kunt U gebruiken in Uw Laravel PHP software project om de data van de Nederlandse Politie die zij via hun [Open data](http://politie.nl/algemeen/open-data.html) [API](http://nl.wikipedia.org/wiki/Application_programming_interface) vrij geven te lezen.
 
@@ -19,7 +19,7 @@ Dit Laravel PHP package kunt U gebruiken in Uw Laravel PHP software project om d
 
 ### Politiebureaus
 
-![politiebureaus](./docs/politiebureaus.graph.png?raw=true "politiebureaus")
+![politiebureaus](./docs/politiebureaus.laravel.graph.png?raw=true "politiebureaus")
 
 ### Wijkagenten
 
@@ -34,5 +34,3 @@ Dit Laravel PHP package kunt U gebruiken in Uw Laravel PHP software project om d
 #### Vermisten
 
 ![vermisten](./docs/vermisten.png?raw=true "vermisten")
-
-# [📁](http://github.com/noud)
