@@ -25,7 +25,7 @@ alttext {label: "integer, null"}
 
 [politiebureaus_locaties]
 *id {label: "bigint, not null"}
-+politiebureaus_id {label: "bigint, not null"}
++politiebureaus_uid {label: "uuid, not null"}
 +locaties_id {label: "bigint, not null"}
 
 [locaties] {bgcolor: "#d0e0d0"}
@@ -39,8 +39,8 @@ postadres
 postcode
 plaats
 
-politiebureaus 1--1 afbeeldingen {label: "afbeelding"}
 politiebureaus 1--1 adressen {label: "postadres"}
 politiebureaus 1--1 adressen {label: "bezoekadres"}
+politiebureaus 1--1 afbeeldingen {label: "afbeelding"}
 politiebureaus_locaties *--1 politiebureaus
 politiebureaus_locaties *--1 locaties
